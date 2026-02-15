@@ -1,0 +1,8 @@
+{
+  "name": "AgriAstra",
+  "description": "An AI-driven Integrated Indian Agriculture Operating System and Super-Portal for farmers and agri-businesses, powered by RISP.",
+  "requestFramePermissions": [
+    "microphone",
+    "geolocation"
+  ]
+}

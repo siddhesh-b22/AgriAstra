@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AgriAstra - Indian Agri Super Portal</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Distinctive Typography: Fraunces (Serif) & Outfit (Sans) -->
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,900&family=Outfit:wght@300;400;600;900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #064E3B;
+      --accent: #C29243;
+      --bg: #FDFDFC;
+      --emerald-glow: rgba(16, 185, 129, 0.15);
+    }
+    
+    body {
+      font-family: 'Outfit', sans-serif;
+      background-color: var(--bg);
+      color: #0f172a;
+      overflow-x: hidden;
+      letter-spacing: -0.01em;
+    }
+
+    h1, h2, h3, .serif {
+      font-family: 'Fraunces', serif;
+      letter-spacing: -0.03em;
+    }
+
+    /* Premium Glassmorphism */
+    .glass-surface {
+      background: rgba(255, 255, 255, 0.7);
+      backdrop-filter: blur(12px) saturate(180%);
+      border: 1px solid rgba(226, 232, 240, 0.5);
+    }
+
+    /* Soft Elevation System */
+    .premium-card {
+      background: white;
+      border: 1px solid rgba(226, 232, 240, 0.6);
+      box-shadow: 0 20px 40px -12px rgba(0, 0, 0, 0.05);
+      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .premium-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 30px 60px -12px rgba(0, 0, 0, 0.08);
+      border-color: rgba(6, 78, 59, 0.2);
+    }
+
+    .btn-premium {
+      background: var(--primary);
+      color: white;
+      box-shadow: 0 10px 20px -5px rgba(6, 78, 59, 0.3);
+      transition: all 0.3s ease;
+    }
+    .btn-premium:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 15px 25px -5px rgba(6, 78, 59, 0.4);
+      filter: brightness(1.1);
+    }
+
+    /* Sophisticated Gradients */
+    .grad-forest {
+      background: linear-gradient(135deg, #064E3B 0%, #042F2E 100%);
+    }
+    .grad-gold {
+      background: linear-gradient(135deg, #C29243 0%, #A67C37 100%);
+    }
+
+    /* Grid background effect */
+    .bg-grid-premium {
+      background-size: 60px 60px;
+      background-image: radial-gradient(circle, #e2e8f0 1.2px, transparent 1.2px);
+    }
+
+    .animate-reveal {
+      animation: revealUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+      opacity: 0;
+    }
+
+    .animate-float {
+      animation: float 6s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-20px); }
+    }
+
+    @keyframes revealUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .shimmer {
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
+      background-size: 200% 100%;
+      animation: shimmer 2s infinite;
+    }
+    @keyframes shimmer {
+      0% { background-position: -200% 0; }
+      100% { background-position: 200% 0; }
+    }
+
+    /* Scroll Triggered reveal utility */
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .reveal.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: #f8fafc; }
+    ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 10px; }
+    ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+
+    /* Hide horizontal scrollbar for carousel */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.38.0",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.13.0",
+    "lucide-react": "https://esm.sh/lucide-react@^0.563.0"
+  }
+}
+</script>
+</head>
+<body class="bg-grid-premium">
+  <div id="root"></div>
+</body>
+</html>
