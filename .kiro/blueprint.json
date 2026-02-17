@@ -1,0 +1,21 @@
+{
+  "architecture": {
+    "core": "React 19 SPA",
+    "intelligence_layer": "Google Gemini 3 (Pro/Flash)",
+    "generative_layer": "Google Veo 3.1",
+    "data_layer": "AgriStore Sovereign Registry",
+    "ui_system": {
+      "typography": ["Fraunces", "Outfit"],
+      "styling": "Tailwind CSS",
+      "design_language": "Premium Nature"
+    }
+  },
+  "modules": [
+    "Kisan Dashboard",
+    "Enterprise Command Center",
+    "Smart Advisor AI",
+    "Munafa Estimator",
+    "Agri-Video Lab",
+    "AgriHub Marketplace"
+  ]
+}

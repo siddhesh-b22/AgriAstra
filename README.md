@@ -11,6 +11,11 @@
 
 ---
 
+## 🛠 Project Meta (The Kiro Layer)
+This project includes a `.kiro` directory at the root, which acts as the **Sovereign Configuration Layer**. It contains the project's architectural blueprints and institutional metadata.
+
+---
+
 ## 🚀 Project Flow
 
 The AgriAstra experience follows a sophisticated end-to-end journey:
@@ -38,6 +43,7 @@ The AgriAstra experience follows a sophisticated end-to-end journey:
 For detailed technical information, please refer to:
 - [Requirements Specification](./requirements.md)
 - [Design Documentation](./design.md)
+- [Sovereign Config](./.kiro/config.json)
 
 ---
 © 2026 AgriAstra. Built for the future of Indian Agriculture.
